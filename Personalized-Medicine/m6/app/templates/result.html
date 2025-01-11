@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Rekomendasi</title>
+</head>
+<body>
+    <h1>Hasil Rekomendasi</h1>
+    <h3>Obat yang disarankan:</h3>
+    <ul>
+        {% for obat in hasil['obat'] %}
+        <li>{{ obat }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Gaya Hidup yang disarankan:</h3>
+    <ul>
+        {% for gaya_hidup in hasil['gaya_hidup'] %}
+        <li>{{ gaya_hidup }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Risiko Penyakit:</h3>
+    <ul>
+        {% for risiko in hasil['risiko_penyakit'] %}
+        <li>{{ risiko }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

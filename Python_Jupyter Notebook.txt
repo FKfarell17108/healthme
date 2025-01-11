@@ -1,0 +1,31 @@
+PYTHON
+
+Unduh Python
+Browser --> python.org
+
+Instal Python
+Penting: Centang opsi Add Python to PATH sebelum melanjutkan --> Install
+
+Verifikasi Instalasi Python
+CMD --> python --version
+
+Mengatur VSCode untuk Pengembangan Python
+- Instal Ekstensi Python --> buka tab Extensions
+- Cari Python dan pilih ekstensi yang dikembangkan oleh Microsoft
+- Klik Install untuk menginstal ekstensi Python
+
+Memilih Interpreter Python di VSCode
+Ctrl + Shift + P --> Ketik Python: Select Interpreter dan pilih versi Python yang baru saja Anda instal
+
+Menguji Instalasi dengan Menjalankan Kode Python di VSCode
+- test.py --> print("Hello, World!")
+- Klik kanan --> Run Python
+
+------------------------------------------------------
+JUPYTER NOTEBOOK
+
+CMD --> pip install jupyter
+
+Membuka Jupyter Notebook --> jupyter notebook
+
+------------------------------------------------------

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthInsight - Form</title>
+</head>
+<body>
+    <h1>Form Input Kesehatan</h1>
+    <form method="POST">
+        <label for="usia">Usia:</label>
+        <input type="number" id="usia" name="usia" required><br><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select><br><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" id="bmi" name="bmi" step="0.1" required><br><br>
+
+        <label for="tekanan_darah">Tekanan Darah:</label>
+        <input type="number" id="tekanan_darah" name="tekanan_darah" required><br><br>
+
+        <label for="kadar_gula_darah">Kadar Gula Darah:</label>
+        <input type="number" id="kadar_gula_darah" name="kadar_gula_darah" step="0.1" required><br><br>
+
+        <label for="riwayat_keluarga">Riwayat Keluarga (1 untuk ada, 0 untuk tidak):</label>
+        <input type="number" id="riwayat_keluarga" name="riwayat_keluarga" required><br><br>
+
+        <label for="status_merokok">Status Merokok (1 untuk merokok, 0 untuk tidak):</label>
+        <input type="number" id="status_merokok" name="status_merokok" required><br><br>
+
+        <label for="aktivitas_fisik">Aktivitas Fisik (0: Tidak aktif, 1: Sedikit aktif, 2: Cukup aktif, 3: Sangat aktif):</label>
+        <input type="number" id="aktivitas_fisik" name="aktivitas_fisik" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% endif %}
+</body>
+</html>

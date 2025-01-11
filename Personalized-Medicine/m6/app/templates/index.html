@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pengguna</title>
+</head>
+<body>
+    <h1>Form Pengguna</h1>
+    <form action="/" method="post">
+        Umur: <input type="number" name="umur" required><br>
+        Jenis Kelamin: 
+        <select name="jenis_kelamin" required>
+            <option value="Pria">Pria</option>
+            <option value="Wanita">Wanita</option>
+        </select><br>
+        Berat Badan (kg): <input type="number" name="berat_badan" required><br>
+        Tinggi Badan (cm): <input type="number" name="tinggi_badan" required><br>
+        Riwayat Penyakit: <input type="text" name="riwayat_penyakit" required><br>
+        Alergi: <input type="text" name="alergi" required><br>
+        Gaya Hidup: <input type="text" name="gaya_hidup" required><br>
+        Gejala: <input type="text" name="gejala" required><br>
+        Pengobatan Sebelumnya: <input type="text" name="pengobatan_sebelumnya" required><br>
+        <button type="submit">Kirim</button>
+    </form>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
